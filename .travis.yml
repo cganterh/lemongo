@@ -1,0 +1,18 @@
+language: python
+python:
+- '3.5'
+- '3.6'
+before_install: pip install pipenv
+install: pipenv install --dev coveralls
+script:
+- pipenv run make _test
+- coveralls
+deploy:
+  provider: pypi
+  user: cganterh
+  password:
+    secure: FUvoCgYQlvV6JulAaazSW8V+nOzzMXo9Ut8J23WLjJ9UhJ2lmAvMYyfOgov34AlA45CJaE8rX+OlXV9puTCfv9tYzPev4kLm6sJkiJ3JutD5Nmx3yVtIlQrl2b4yTxuNqAIer7NxsjpVxpiYcgcPjJvk5EEJY/sSE1PiZKY3ZAC7RHTX91i7K1Ma1ccGH5qEv7YEMNfCo0KlBJGVXp6cY1uxm6qiYed8ZXx78cUn8ynvPA7c1oQx6ze5ldj7Xcmuo53w1xu4Dl51aoFjInW9cdE3rE04CHB1Hcc7lkWlFG2csFLt0pHBnt8BgUkYk/hs5dWO1Ltqm1SAH669DnoPAGZP1mFJU7keBiW8YYoHBNEfyXM9aQkkFRb+s3AiJxt+U3pO9aaD7tbuMINwDYu4qyG+K9zDAVrPlbnhElgeGeXu1hlKYZ5WZ/cdaAcjEh19AAEtSZfGfFUpUWe19Ya7TiYdGFLyL6KLqTzR8HPTOmqy6h9kNWSMnjutMrk3OmTsrcccf/9eJFXSFe+51dCJtVPBJD5qdBH5Yjkcce5JrmX+iGg3BdD4RH9abtAGNef1kio+TneuekuII538D2XnM2KEG02ZbIrc19qKcYF9hprIb2eyFRXBrNAJO0AWmyN6CV1Q/O9F1d0IKZcxOV5qx1fYZHVwe0hUz7Z4PuDG6n0=
+  on:
+    tags: true
+    python: '3.5'
+  distributions: sdist bdist_wheel
