@@ -3,7 +3,9 @@ python:
 - '3.5'
 - '3.6'
 before_install: pip install pipenv
-install: pipenv install --dev coveralls
+install:
+- make install
+- pipenv install --dev coveralls
 script:
 - pipenv run make _test
 - coveralls

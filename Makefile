@@ -5,7 +5,7 @@ install:
 	pipenv $@ --dev
 
 .PHONY: _test
-_test: install
+_test:
 	flake8 .
 	coverage run -m tests
 
