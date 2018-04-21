@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".coverage"
+			],
+			"folder_exclude_patterns":
+			[
+				"lemongo.egg-info",
+				".eggs"
+			],
+			"path": "."
+		}
+	]
+}
