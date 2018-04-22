@@ -13,7 +13,7 @@ _client = _DEFAULT_CLIENT_VALUE
 _parser = _ArgumentParser(fromfile_prefix_chars='@', add_help=False)
 
 _parser.add_argument(
-    '-m', '--mongodb-uri', help='MongoDB connection URI')
+    '-u', '--mongodb-uri', help='MongoDB connection URI')
 
 _logger = _getLogger(__name__)
 
