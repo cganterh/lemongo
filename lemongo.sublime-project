@@ -4,11 +4,14 @@
 		{
 			"file_exclude_patterns":
 			[
+				"lemongo.sublime-workspace",
 				".coverage"
 			],
 			"folder_exclude_patterns":
 			[
+				"dist",
 				"lemongo.egg-info",
+				"build",
 				".eggs"
 			],
 			"path": "."
