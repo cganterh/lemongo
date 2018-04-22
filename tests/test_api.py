@@ -8,7 +8,7 @@ import lemongo
 from pymongo import MongoClient
 from pkg_resources import iter_entry_points
 
-from .lemongo_test_case import LeMongoTestCase
+from tests.lemongo_test_case import LeMongoTestCase
 
 
 class TestLeMongoModuleRequirements(LeMongoTestCase):

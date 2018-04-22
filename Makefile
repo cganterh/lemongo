@@ -7,7 +7,7 @@ install:
 .PHONY: _test
 _test:
 	flake8 .
-	coverage run -m tests
+	coverage run setup.py test
 
 .PHONY: report
 report: _test
