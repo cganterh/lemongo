@@ -1,8 +1,8 @@
 lemongo
 =======
 
-.. image:: https://travis-ci.org/cganterh/lecluvindex.svg?branch=master
-	:target: https://travis-ci.org/cganterh/lecluvindex
+.. image:: https://travis-ci.org/cganterh/lemongo.svg?branch=master
+	:target: https://travis-ci.org/cganterh/lemongo
 .. image:: https://coveralls.io/repos/github/cganterh/lemongo/badge.svg?branch=master
 	:target: https://coveralls.io/github/cganterh/lemongo?branch=master
 
